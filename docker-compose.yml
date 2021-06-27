@@ -1,0 +1,8 @@
+version: '3.8'
+
+services: 
+  django:
+    build: .
+    ports: 
+      - "8000:8000"
+    command: gunicorn minimal_django.wsgi:application -w 2 -b :8000
