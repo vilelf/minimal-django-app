@@ -2,3 +2,12 @@ env
 *.pyc
 __pycache__/
 .vscode
+.env
+
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+tfplan
+.terraform

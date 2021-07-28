@@ -1,0 +1,9 @@
+version: '3.8'
+
+services: 
+  django:
+    build: .
+    image: vilelf/minimal-django-app
+    ports: 
+      - "3000:3000"
+    command: gunicorn minimal_django.wsgi:application -w 2 -b :3000

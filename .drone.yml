@@ -1,0 +1,13 @@
+---
+kind: pipeline
+type: exec
+name: teste
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: teste
+    commands:
+      - echo "Hello, DroneCI"
